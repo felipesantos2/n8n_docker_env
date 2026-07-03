@@ -1,0 +1,20 @@
+steps to up environment
+
+1 -> docker compose build
+2 -> docker compose up or docker compose up -d
+
+extra:
+    docker compose build --no-cache
+    docker compose down
+    docker compose down -v or --volumes
+    docker ps
+    dokcer ps -a 
+    dokcer images 
+    dokcer images -a 
+    dokcer container ls 
+
+    shell file:
+        build.sh
+        
+tip:
+    ls -lahS -> Displays all files sorted by size and their permissions
