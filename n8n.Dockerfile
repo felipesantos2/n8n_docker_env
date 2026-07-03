@@ -1,4 +1,5 @@
 FROM n8nio/n8n:2.29.5
+LABEL maintainer="felipesantos2"
 USER root
 # install apk-tools
 # RUN apk add --no-cache vim bash curl wget build-base python3 py3-pip
