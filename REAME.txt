@@ -13,8 +13,17 @@ extra:
     dokcer images -a 
     dokcer container ls 
 
+
+    docker inspect <containerId>
+    docker logs <containerId>
+
+    docker --help
+    docker inspect --help
+    docker compose --help
+    docker compose up --help
+
     shell file:
-        build.sh
+        ./build.sh
         
 tip:
     ls -lahS -> Displays all files sorted by size and their permissions
