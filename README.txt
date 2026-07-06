@@ -25,13 +25,20 @@ extra:
     shell file:
         ./build.sh
         
-tip:
+
+bash tip:
     ls -lahS -> Displays all files sorted by size and their permissions
 
-compose linter:
+docker-compose linter:
 
 docker run -it --rm -v ${PWD}:/app \
-    zavoloklom/dclint docker-compose.yml 
+    zavoloklom/dclint docker-compose.yml
+
+docker run -it --rm -v ${PWD}:/app \
+    zavoloklom/dclint docker-compose.yaml
+
+docker run -it --rm -v ${PWD}:/app \
+    zavoloklom/dclint compose.yml
 
 docker run -it --rm -v ${PWD}:/app \
     zavoloklom/dclint docker-compose.yml --fix
