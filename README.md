@@ -1,4 +1,4 @@
-# n8n\_docker\_env   
+# n8n_docker_env   
 
 Um ambiente prático para executar um container do N8N e criar seus primeiros nós.   
 
@@ -21,4 +21,27 @@ Executa um container que faz um linter em seu docker-compose
 
 ---
 
-## Notas
+## Praticidade com seu Ambiente
+Temos alguns scripts de shell para facilitar trabalhar com os containers:
+
+- `up.sh
+- `down.sh`
+- `build.sh`
+
+Executando:
+
+```bash 
+  ./up.sh
+  ./down.sh
+  bash up.sh
+  bash down.sh
+``` 
+---
+
+`postgresql:`
+  - user: postgres
+  - password: root
+  - port: 5432
+
+`pgadmin:`
+  - localhost:3000
