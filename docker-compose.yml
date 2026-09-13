@@ -26,6 +26,22 @@ services:
     networks:
       - default
     restart: always
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    depends_on:
+      - postgres-test
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: felipe@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - '3000:3000'
+    networks:
+      - default
+    restart: always
 
   postgre:
     build:
@@ -42,6 +58,8 @@ services:
     networks:
       - default
     restart: always
+  
+
 networks:
   default:
     name: n8n_network
