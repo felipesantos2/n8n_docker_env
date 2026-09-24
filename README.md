@@ -45,3 +45,12 @@ Executando:
 
 `pgadmin:`
   - localhost:3000
+
+  
+---
+
+Vamos trocar uma ideia no LinkedIn:
+
+[LinkedIn](https://www.linkedin.com/in/felipepinheiro2/)
+
+---
